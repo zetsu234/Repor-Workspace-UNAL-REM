@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Exitoso</title>
+    <%- include('Partials/head') %>
+      <style>
+        .oculto { display: none !important; }
+        /* Estilos básicos para las secciones de pasos */
+        .paso-seccion { margin-top: 20px; }
+    </style>
+    
+</head>
+<body>
+
+    <%- include('Partials/navigation') %>
+
+    <main class="container vh-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="card p-5 shadow-lg text-center" style="max-width: 450px; width: 100%;">
+            
+            <div class="mb-4 text-primary" style="font-size: 3.5rem;">
+                👍
+            </div>
+
+            <h3 class="mb-3 text-dark">¡Registro Exitoso!</h3>
+            
+            <p class="mb-4 text-secondary">
+                Su cuenta asociada al correo <strong><%= correo %></strong> ha sido guardada correctamente en el sistema.
+            </p>
+
+            <a href="/login" class="btn btn-primary rounded-pill w-100 py-2">Continuar al Login</a>
+            
+        </div>
+    </main>
+
+    <%- include('Partials/footer') %>
+</body>
+</html>
